@@ -1,0 +1,12 @@
+<?php
+/** @var \Hibrido\IdentifyPageMultiStore\Block\MetaTag $block */
+/** @var \Magento\Framework\Escaper $escaper */
+?>
+
+<div class="template">
+    <?php foreach ($block->getCmsPageStores() as $cmsStorePage) { ?>
+        <link rel="alternate" hreflang="<?= $escaper->escapeHtml($block->getStoreLanguage($cmsStorePage)) ?>" 
+            href="<?= $escaper->escapeHtml($block->getStoreBaseUrl($cmsStorePage)) .
+            $escaper->escapeHtml($block->getCmsPageUrl()) ?>">
+    <?php } ?>
+</div>

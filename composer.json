@@ -1,0 +1,16 @@
+{
+    "name": "custom-magento-module/identify-page-multi-store",
+    "description": "",
+    "type": "magento2-module",
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "psr-4": {
+            "CustomMagentoModule\\IdentifyPageMultiStore\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
